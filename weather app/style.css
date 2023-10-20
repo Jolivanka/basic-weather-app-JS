@@ -1,0 +1,225 @@
+Reset default margin and padding for all elements
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background image and text styles for the body */
+body {
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    background-color: #79A0C9;
+    line-height: 1.6;
+}
+
+h1{
+    background-image: linear-gradient(
+      to right,
+      #1260cc,
+      #1260cc 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  h1:before {
+    content: '';
+    background: #1877F2;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  h1:hover {
+   background-position: 0;
+  }
+  
+  h1:hover::before {
+    width:100%;
+  }
+
+
+/*container */
+.container {
+    width: 80%;
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #79A0C9; 
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+}
+
+/*weather input section */
+.weather-input {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #1260cc; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+
+}
+
+.city-input {
+    width: 70%;
+    padding: 12px;
+    border: none;
+    background-color: #D3DDE9; 
+    border-radius: 5px;
+    color: black;
+    font-size: 1rem;
+}
+
+.container h3{
+    color: #1260cc;
+}
+
+/*buttons*/
+
+.search-btn, .location-btn {
+    padding: 12px 24px;
+    background-color: #79A0C9; 
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.search-btn:hover, .location-btn:hover {
+    background-color: #1877F2;
+}
+
+.separator {
+    height: 2px;
+    background-color: #D3DDE9;
+    margin: 20px 0;
+}
+
+/*current weather div */
+
+.current-weather {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+    margin-top: 20px;
+    font-size: 19px;
+    padding: 20px; 
+    border-radius: 1rem;
+    color: #D3DDE9;
+    background-color: #1260cc; 
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    transition: background-color 0.3s; 
+}
+.current-weather:hover {
+    background-color: #1877F2; 
+}
+
+.current-weather img {
+    display: block; 
+    margin: 0 auto; 
+}
+
+.current-weather h2 {
+    font-size: 39px;
+}
+
+
+/* weather cards */
+.days-forecast {
+    margin-top: 20px;
+}
+.days-forecast h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #D3DDE9;
+}
+
+.weather-cards {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.card {
+    opacity: ;
+    flex: 1;
+    width: calc(50% - 20px);
+    text-align: center;
+    background-color: #1260cc;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    color: #D3DDE9;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+
+}
+.card h3 {
+    color: #D3DDE9;
+}
+
+.card:hover {
+    background-color: #1877F2; 
+}
+
+/*footer */
+footer {
+    text-align: center;
+    background-color: #79A0C9; 
+    color: #D3DDE9;
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #D3DDE9;
+}
+
+/* donate button  */
+
+#donate-button {
+    background-color: #1260cc; 
+    color: #F6F7F9;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: -4rem;
+    transition: background-color 0.3s; 
+    font-size: 1rem;
+}
+
+#donate-button:hover {
+    background-color: #1877F2; 
+}

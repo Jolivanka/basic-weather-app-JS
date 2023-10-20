@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>World Weather</h1>
+    <div class="container">
+        <div class="weather-input">
+            <h3>Enter a city:</h3>
+            <input type="text" class="city-input" placeholder="Input city"/>
+            <button class="search-btn">Search</button>
+            <div class="separator"></div>
+            <button class="location-btn">Use current location</button>
+        </div>
+        <div class="weather-data">
+            <div class="current-weather">
+                <div class="details">
+                    <h2>_____ (____)</h2>
+                    <h4>Temp: __ °C</h4>
+                    <h4>Wind: _____ m/s</h4>
+                    <h4>Humidity: __ %</h4>
+                    <div class="icon">
+                    </div>
+                </div>
+            </div>
+            <div class="days-forecast">
+                <h2>5-day forecast</h2>
+                <ul class="weather-cards">
+                    <li class="card">
+                    <h3>( _____ )</h3>
+                    <h4>Temp: __ °C</h4>
+                    <h4>Wind: _____ m/s</h4>
+                    <h4>Humidity: __ %</h4>
+                    </li>
+                    <li class="card">
+                        <h3>( _____ )</h3>
+                        <h4>Temp: __ °C</h4>
+                        <h4>Wind: _____ m/s</h4>
+                        <h4>Humidity: __ %</h4>
+                        </li>
+                        <li class="card">
+                            <h3>( _____ )</h3>
+                            <h4>Temp: __ °C</h4>
+                            <h4>Wind: _____ m/s</h4>
+                            <h4>Humidity: __ %</h4>
+                            </li>
+                            <li class="card">
+                                <h3>( _____ )</h3>
+                                <h4>Temp: __ °C</h4>
+                                <h4>Wind: _____ m/s</h4>
+                                <h4>Humidity: __ %</h4>
+                                </li>
+                                <li class="card">
+                                    <h3>( _____ )</h3>
+                                    <h4>Temp: __ °C</h4>
+                                    <h4>Wind: _____ m/s</h4>
+                                    <h4>Humidity: __ %</h4>
+                                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <hr> <!-- Horizontal line -->
+            <p>&copy; All rights reserved.</p>
+            <button id="donate-button">Donate</button>
+        </div>
+    </footer>
+
+</body>
+</html>
